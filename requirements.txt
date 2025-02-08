@@ -1,0 +1,3 @@
+google-cloud-datastore
+apache-airflow-providers-apache-spark
+apache-airflow-providers-google

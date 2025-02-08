@@ -1,0 +1,6 @@
+logs/*
+logs/** */
+.venv/*
+dags/__pycache__/*
+logs/scheduler/latest/*
+logs/dag_processing_manager.log
