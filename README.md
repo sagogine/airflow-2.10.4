@@ -27,11 +27,11 @@
         - *flower* : The flower app for monitoring the environment. It is available at `http://localhost:5555`
         - *datastore*
 4. Navigate to `./airflow-2.10.4/datastore-code/`
-    - execute `python3 datastore_write.py` (*feel free to add more entities*)
+    - Execute `python3 datastore_write.py` (*feel free to add more entities*) : This adds the config to datastore (imagine xcelerator's config)
 5. Acccess the airflow UI - `http://localhost:8080` and trigger the dags. (*They are defaulted to pause on spinup*)
 
 # Important files to look at
 
-1. `main.py` : Entry point for the airflow to trigger the dag generation
-2. `dag_generator.py` : Parses the entry in the datastore-emulator and creates the tasks and dags
-3. `operatory_factory.py` : Static objects to create the operators within tasks on demand
+1. `main.py` : Entry point for airflow to trigger the dag generation
+2. `dag_generator.py` : Parses the entries in datastore-emulator and creates tasks and dags
+3. `operatory_factory.py` : Static methods to create the operators within tasks on demand
